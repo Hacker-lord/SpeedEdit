@@ -26,16 +26,25 @@
         top: 0;
         right: 0;
         left: 20%;
-        bottom: 80%;
+        width: 80%;
+        height: 25px;
+        border-bottom: 1px solid red;
+      }
+      .tab {
+        background: black;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
       }
     </style>
   </head>
   <body>
-    <div id='tabs'></div>
 
     <div id='explorer'></div>
 
     <div id='editor'></div>
+    <div id='tabs'>
+      <tab class='tab'>Example tab</tab>
+    </div>
     <script>
       var editor = ace.edit("editor");
       editor.setTheme("ace/theme/monokai");
