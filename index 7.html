@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SpeedEdit v1.0.0</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js'></script>
+    <style>
+      #editor {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        bottom: 0;
+        left: 20%;
+      }
+      #explorer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background: green;
+      }
+      #tabs {
+        background: #272822;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 20%;
+        bottom: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='tabs'></div>
+
+    <div id='explorer'></div>
+
+    <div id='editor'></div>
+    <script>
+      var editor = ace.edit("editor");
+      editor.setTheme("ace/theme/monokai");
+      editor.session.setMode("ace/mode/javascript");
+    </script>
+  </body>
+</html>
